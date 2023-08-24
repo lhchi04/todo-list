@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Todo List</title>
+  </head>
+  <body>
+    <div id="content">
+      <div class="form-container">
+        <form>
+          <div class="form-info">
+            <div class="left-info">
+              <label for="title"></label>
+              <input class="title" type="text" name="title" placeholder="Title" required />
+  
+              <label for="description"></label>
+              <input class="description" type="text" name="description" placeholder="Description" />
+  
+              <label for="notes"></label>
+              <input class="notes" type="text" name="notes" placeholder="Notes" />
+            </div>
+            <div class="right-info">
+              <div class="due-date-container">
+                <label for="due-date">Due Date:</label>
+                <input class="due-date" type="date" name="due-date" />
+              </div>
+              <div class="priority-container">
+                <label for="priority">Priority:</label>
+              <select name="priority" class="priority"> 
+                <option value="0" selected>None</option>
+                <option value="1">Very important</option> 
+                <option value="2">Important</option> 
+                <option value="3">Not Important</option> 
+              </select>
+              </div>
+            </div>
+          </div>
+          <div class="formbtn">
+            <button class="close" type="button">Close</button>
+            <button class="submit" type="submit">Done</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="bundle.js"></script>
+  </body>
+</html>
